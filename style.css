@@ -53,6 +53,9 @@ main {
   width: 50px;
   height: 50px;
   margin: 80px 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .playtriangle {
   width: 0;
@@ -60,7 +63,8 @@ main {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid white;
-  display: inline;
+  /* display: inline; bu kod rotate calismasina engel olur*/
+  transform: rotate(90deg);
 }
 .line-one {
   width: 100px;
@@ -103,27 +107,33 @@ main {
   width: 100%;
   justify-content: space-around;
   margin-top: 20px;
+  margin-top: -40px;
 }
 .middle-left {
   width: 150px;
   height: 300px;
-  background-color: white;
+
 }
 .middle-middle {
   width: 450px;
   height: 300px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .middle-right {
   width: 200px;
   height: 300px;
-  background-color: white;
+ 
 }
 .iphone {
   width: 120px;
   height: 260px;
   background-color: white;
   border-radius: 10px;
+  padding: 10px;
 }
 .phone-top {
   width: 70px;
@@ -149,7 +159,7 @@ main {
 
 label {
   display: block;
-  width: 100px;
+  width: 60px;
   height: 40px;
   background-color: rgb(223, 203, 203);
   border-radius: 40px;
@@ -205,6 +215,7 @@ label input:checked + .check-button {
 }
 .threepoints {
   display: flex;
+  margin-top: 70px;
 }
 p {
   width: 10px;
@@ -241,4 +252,17 @@ ul li {
   height: 40px;
   background-color: rgb(77, 177, 243);
   margin: 5px;
+}
+
+.circle-triangel{
+
+}
+.middle-leftt{
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
